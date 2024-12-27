@@ -1,0 +1,151 @@
+
+
+header .profile h1 {
+    margin: 0.5rem;
+    font-size: 2rem;
+    
+}
+header .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* navigation bar */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background-color: #333;
+        padding: 1rem;
+    }
+    nav ul.show {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Section Styles */
+section {
+    padding: 2rem 1rem;
+
+}
+
+.portfolio, .skills, .career, .education, .contact {
+    background: #f9f9f9;
+    margin-bottom: 2rem;
+}
+
+.portfolio h2, .skills h2, .career h2, .education h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Portfolio Items */
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.portfolio-items .item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.portfolio-items .item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-items .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.portfolio-items .item .button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.portfolio-items .item .button:hover {
+    background: #555;
+}
+
+/* Skills Tags */
+.skills .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.skills .tags span {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+/* Career Highlights */
+.career ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
